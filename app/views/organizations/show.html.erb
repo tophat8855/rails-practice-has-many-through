@@ -13,12 +13,12 @@
     </tr>
   </thead>
   <tbody>
-    <div class="well">
-      <ul>
+    <tr>
+      <td>
         <% @organization.people.each do |person| %>
         <li><%= person.name %></li>
         <% end %>
-      </ul>
-    </div>
+      </td>
+    </tr>
   </tbody>
 </table>
