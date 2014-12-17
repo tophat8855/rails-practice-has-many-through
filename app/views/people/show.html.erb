@@ -16,7 +16,7 @@
     <tr>
       <td>
         <% @person.organizations.each do |org| %>
-        <li><%= org.name %></li>
+          <li><%= link_to org.name, organization_path %></li>
         <% end %>
       </td>
     </tr>
